@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container .home{
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    color: #85A98F;
+    margin: 20px 20px;
+    margin-left:-70px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+.container .home a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #85A98F;
+    transition: 0.2s linear;
+}
+.container.home a:hover{
+    width: 100%;
+}
+.container .home a:hover{
+    color: #5A6C57;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c7decd;
+    color: #333;
+}
+
+/* Section Styling */
+.skills-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.9rem;
+    
+    margin: 15px 15px;
+    color: #444;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background: #8eab96;
+    border: 4px solid #ddd;
+    border-radius: 30px;
+    width: 400px;
+    
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Skill Icon Styling */
+.skill-icon {
+    font-size: 3rem;
+    color: #0078d7;
+    transition: color 0.3s ease;
+}
+
+
+.skill-card:hover .skill-icon {
+    color: #ff5722;
+}
+.skill-card:hover .local{
+    font-size: 1.8rem;
+    
+    transition: color 0.3s ease;
+}
+.skill-card:hover .local{
+    color: #ff5722;
+}
